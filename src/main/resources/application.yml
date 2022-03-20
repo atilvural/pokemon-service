@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+endpoints.health.sensitive: false
+management.security.enabled: false
+
+spring:
+  application:
+    name: pokemon-service
+  jpa:
+    database-platform: org.hibernate.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: admin
+    password: admin
+    url: jdbc:sqlite:mydb.sqlite
+    driver-class-name: org.sqlite.JDBC
+
+pokeApi:
+  fetchCount: 500
+  pageSize: 10
+  url: https://pokeapi.co/api/v2
