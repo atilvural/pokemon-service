@@ -8,3 +8,10 @@ pokeApi:
   fetchCount: 500 -> Fetched pokemon count
   pageSize: 10 -> Default pagesize for selecting pokemons
   url: https://pokeapi.co/api/v2 -> pokeApi url
+  
+# docker
+If you take build from docker using
+docker build -t pokemon-service:latest .
+
+and call fetch api,
+You can check logs using docker logs command
